@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Board Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="libs/interact.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🎯 Vision Board Creator</h1>
+        <p>Visualize your dreams and goals with style!</p>
+        <select id="theme-selector" aria-label="Select Theme">
+            <option value="pastel">Pastel</option>
+            <option value="dark">Dark</option>
+            <option value="vibrant">Vibrant</option>
+        </select>
+        <button id="music-toggle">🎵 Toggle Music</button>
+    </header>
+
+    <div id="vision-board-container">
+        <!-- Vision board canvas -->
+        <div id="board" aria-label="Vision Board Canvas">
+            <h2>Drag and Drop Your Items Here</h2>
+        </div>
+
+        <!-- Tools panel -->
+        <div id="tools" aria-label="Tools Panel">
+            <button id="add-text" aria-label="Add Text">Add Text</button>
+            <button id="add-image" aria-label="Add Image">Add Image</button>
+            <button id="generate-quote" aria-label="Generate Quote">Generate Quote</button>
+            <button id="export-board" aria-label="Export Board">Export Board</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vision Board Creator. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
